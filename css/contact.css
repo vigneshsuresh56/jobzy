@@ -138,3 +138,24 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+/* Validation styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.input-group .error-msg {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.input-group.error input, .input-group.error textarea {
+    border-color: #e74c3c;
+}
+
+.input-group.success input, .input-group.success textarea {
+    border-color: #2ecc71;
+}
