@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function validateApply() {
         let success = true;
 
-        // 🔹 Full Name
+        //  Full Name
         if (fullname.value.trim() === '') {
             success = false;
             setError(fullname, "Full name is required");
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(fullname);
         }
 
-        // 🔹 Email
+        //  Email
         if (email.value.trim() === '') {
             success = false;
             setError(email, "Email is required");
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(email);
         }
 
-        // 🔹 Phone
+        //  Phone
         if (phone.value.trim() === '') {
             success = false;
             setError(phone, "Phone number is required");
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(phone);
         }
 
-        // 🔹 Resume
+        //  Resume
         if (resume.value === '') {
             success = false;
             setError(resume, "Upload your resume");
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(resume);
         }
 
-        // ✅ Final Success
+        // Final Success
         if (success) {
 
             alert("Application Submitted Successfully!");
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // 🔹 Error Function
+    //  Error Function
     function setError(element, message) {
         const parent = element.parentElement;
         let error = parent.querySelector('.error-msg');
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
         parent.classList.remove('success');
     }
 
-    // 🔹 Success Function
+    //  Success Function
     function setSuccess(element) {
         const parent = element.parentElement;
         const error = parent.querySelector('.error-msg');
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
         parent.classList.remove('error');
     }
 
-    // 🔹 Email Validation
+    //  Email Validation
     function validateEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function validateContact() {
         let success = true;
 
-        // 🔹 Name
+        //  Name
         if (name.value.trim() === '') {
             success = false;
             setError(name, "Name is required");
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(name);
         }
 
-        // 🔹 Email
+        //  Email
         if (email.value.trim() === '') {
             success = false;
             setError(email, "Email is required");
@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(email);
         }
 
-        // 🔹 Subject
+        //  Subject
         if (subject.value.trim() === '') {
             success = false;
             setError(subject, "Subject is required");
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(subject);
         }
 
-        // 🔹 Message
+        //  Message
         if (message.value.trim() === '') {
             success = false;
             setError(message, "Message is required");
@@ -333,14 +333,14 @@ document.addEventListener("DOMContentLoaded", () => {
             setSuccess(message);
         }
 
-        // ✅ Final Success
+        // Final Success
         if (success) {
             alert("Message Sent Successfully!");
             form.reset();
         }
     }
 
-    // 🔹 Error Function
+    // Error Function
     function setError(element, message) {
         const parent = element.parentElement;
         let error = parent.querySelector('.error-msg');
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
         parent.classList.remove('success');
     }
 
-    // 🔹 Success Function
+    //  Success Function
     function setSuccess(element) {
         const parent = element.parentElement;
         const error = parent.querySelector('.error-msg');
@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
         parent.classList.remove('error');
     }
 
-    // 🔹 Email Validation
+    //  Email Validation
     function validateEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
@@ -380,7 +380,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.getElementById("login");
     const registerBtn = document.getElementById("register");
 
-    // 🔹 Login Button Click
+    //  Login Button Click
     if (loginBtn) {
         loginBtn.addEventListener("click", (e) => {
             e.preventDefault(); // stop default link
@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 🔹 Register Button Click
+    // Register Button Click
     if (registerBtn) {
         registerBtn.addEventListener("click", (e) => {
             e.preventDefault();
