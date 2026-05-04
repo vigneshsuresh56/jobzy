@@ -125,3 +125,10 @@ body {
 .input-group.sucess input {
     border-color: #2ecc71;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+    .auth-card { padding: 25px 15px; }
+    .logo { font-size: 24px; }
+    .auth-card h3 { font-size: 20px; }
+}

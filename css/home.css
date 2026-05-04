@@ -329,3 +329,40 @@ footer {
     padding: 20px;
     font-size: 14px;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .navbar { padding: 15px 30px; }
+    .hero h2 { font-size: 36px; }
+    .search-box input { width: 180px; }
+    section { padding: 50px 30px; }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    body { padding-top: 140px; }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .menu a { margin: 0 5px; }
+    .hero { padding: 60px 20px; }
+    .hero h2 { font-size: 28px; }
+    .search-box { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
+    .search-box input, .search-box button { width: 100%; }
+    .category-list, .job-list, .company-list { gap: 15px; }
+    .job-card { width: 100%; max-width: 350px; }
+}
+
+@media (max-width: 480px) {
+    .hero h2 { font-size: 24px; }
+    .hero p { font-size: 16px; }
+    section h2 { font-size: 24px; }
+    .card { width: 100%; max-width: 200px; }
+}
